@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --dark: #111827;
+      --light: #f9fafb;
+      --gray: #6b7280;F
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+    }
+
+    .headline {
+      font-size: 1.4rem;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.6rem;
+      margin: 0 12px;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-4px);
+      opacity: 0.85;
+    }
+
+    /* Main content */
+    section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 50px;
+      color: var(--primary);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-text p {
+      font-size: 1.15rem;
+      margin-bottom: 1.4rem;
+      color: #374151;
+    }
+
+    .about-img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .skill {
+      background: white;
+      padding: 14px 28px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 24px;
+    }
+
+    .project-content h3 {
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .contact {
+      text-align: center;
+      background: #f1f5f9;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 32px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.15rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #0055aa;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: var(--dark);
+      color: #9ca3af;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      header {
+        padding: 90px 0 60px;
+      }
+      h1 {
+        font-size: 2.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img 
+        src="Gonzalez\indexp.jpg"
+        alt="Your photo" 
+        class="profile-pic"
+      >
+      <h1>Mohammad Alisher M. Gonzales</h1>
+      <div class="headline">Chill person | SSLG Candidate| Problem Solver</div>
+      
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1Amz8f85n6/" target="_blank">facebook</a>
+        <a href="https://www.instagram.com/lone.wolf4084?igsh=MW5rMWd6d3c2NWZ3MQ==" target="_blank">Instagram</a>
+        <a href="https://x.com/MohammadGo59486">X / Twitter</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hi, my name is Mohammad Alisher Gonzales. I’m 17 years old and I’m from Zamboanga City. I love eating good food and I can talk about almost any topic for hours, whether it’s life, school, music, or random things that come to mind. I’m a chill and friendly guy who enjoys making people laugh and keeping the vibe positive. Right now, I’m running as an SSLG candidate because I want to serve my school and be part of something bigger than myself. In my free time, I like scrolling through my phone, listening to music, and thinking about future goals even if I get distracted sometimes. I believe in being real, staying humble, and enjoying the small moments while chasing big dreams.</p>
+        </div>
+        
+        <div>
+          <img 
+            src="Gonzalez\indexp.jpg" 
+            alt="Working on laptop" 
+            class="about-img"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background:#f8fafc;">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-container">
+        <div class="skill">Knows about computers</div>
+        <div class="skill">Name of fashion brands</div>
+        <div class="skill">Perfumery</div>
+        <div class="skill">Cooking</div>
+        <div class="skill">Modding</div>
+        <div class="skill">Fixing</div>
+        <div class="skill">Planning</div>
+        <div class="skill">Selling</div>
+        <div class="skill">Crowd control</div>
+        <div class="skill">Driving</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Let's Work Together</h2>
+      <p style="font-size:1.3rem; margin: 0 0 30px; color:#4b5563;">
+        Have a project in mind? Feel free to reach out!
+      </p>
+      
+      <a href="https://www.facebook.com/share/1Amz8f85n6/">Send me a message</a>
+      <a href="https://www.instagram.com/lone.wolf4084?igsh=MW5rMWd6d3c2NWZ3MQ==">Connect on Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Mohammad alisherher M. Gonzales— Made with passion in Zamboanga City</p>
+    </div>
+  </footer>
+
+</body>
+</html>
