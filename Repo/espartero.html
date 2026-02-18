@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jadner Espartero - Gamer, Artist, Fitness Enthusiast</title>
+  <style>
+    :root {
+      --primary: #4a6ee0;
+      --dark: #121212;
+      --light: #f0f4ff;
+      --gray: #e0e0e0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, var(--light), white);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 6rem;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+      opacity: 0.9;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      margin: -90px auto 2rem;
+      display: block;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      padding: 5rem 0;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+    .about {
+      background: white;
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+    }
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.8rem; }
+      .profile-pic { width: 150px; height: 150px; margin: -75px auto 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="espartero.jpg" alt="Jadner Espartero" class="profile-pic">
+    <!-- Replace YOUR-SELFIE-PHOTO.jpg with the actual file name/path of the selfie you shared -->
+    <h1>Jadner Espartero</h1>
+    <p>Gamer | Artist | Fitness Lover | Sneaker & Jacket Collector</p>
+  </header>
+
+  <div class="container">
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hey there! I'm Jadner, a passionate guy from Zamboanga who loves staying active and creative. Whether I'm deep into an intense gaming session, sketching new art ideas, hitting a home workout, or going for a jog, I always try to keep things fun and balanced. I’m also building my dream collection of stylish shoes and jackets — fashion meets passion!</p>
+    </section>
+
+    <h2>My Interests</h2>
+    <div class="interests">
+      <div class="card">
+        <img src="https://www.leetdesk.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fleetdesk%2Fc5527f47-def9-433c-9cce-23f286dbfea2_Front.jpg%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C374%2C4000%2C2250%26w%3D1920%26h%3D1080&w=3840&q=75" alt="Gaming Setup">
+        <div class="card-content">
+          <h3>Gaming</h3>
+          <p>Love diving into epic games, grinding ranks, and building cool setups.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.painterartist.com/static/ptr/landing_pages/seo/draw-manga/draw-manga-wacom-tablet.jpg" alt="Digital Drawing">
+        <div class="card-content">
+          <h3>Drawing</h3>
+          <p>Creating art with digital tools — mostly anime-inspired sketches and illustrations.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.ctfassets.net/0k812o62ndtw/5b0JH8aM7yqJfMSSTUbtLg/579642d0d551d05a732b9259201e68b9/Britany_Williams5933_1024x683_27c3a53_en8a4b39c2da260b0e6461542ee3a6a36d.jpg?w=1024&q=85" alt="Home Workout">
+        <div class="card-content">
+          <h3>Fitness</h3>
+          <p>Home workouts + jogging — staying strong and energized every day.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>My Shoe Collection</h2>
+    <p style="text-align:center; margin-bottom:2rem;">Building my sneaker game one pair at a time — here's some inspiration from cool displays!</p>
+    <div class="gallery">
+      <img src="https://m.media-amazon.com/images/I/61wIwCBzlQL._AC_UF894,1000_QL80_.jpg" alt="Sneaker Display Box">
+      <img src="https://media.gettyimages.com/id/958344442/photo/fashionable-sneakers-on-display-in-shop-window-royalty-free-image/958344442?s=1024x1024&w=gi&k=20&c=buYuyr8q-jfsS34jQzcl9-KkFC6yKxj7mGdJ50TlWOQ=" alt="Sneakers in Shop Window">
+      <img src="https://c8.alamy.com/comp/E58DTX/nike-free-running-shoe-display-in-a-nike-store-E58DTX.jpg" alt="Nike Shoes Display">
+    </div>
+
+    <h2>My Jacket Collection</h2>
+    <p style="text-align:center; margin-bottom:2rem;">Love collecting jackets — from casual to streetwear vibes.</p>
+    <div class="gallery">
+      <img src="https://thumbs.dreamstime.com/b/colorful-jackets-displayed-retail-store-fall-season-fashionable-shopping-experience-variety-hang-neatly-374542720.jpg" alt="Colorful Jackets">
+      <img src="https://thumbs.dreamstime.com/b/modern-wardrobe-closet-many-colorful-patterned-designer-jackets-hanging-racks-various-elegant-shoes-luxury-handbags-neatly-409096654.jpg" alt="Jackets on Rack">
+      <img src="https://thumbs.dreamstime.com/b/warm-winter-coats-hang-racks-well-organized-clothing-store-shoppers-browse-various-styles-colors-highlighting-361298096.jpg" alt="Winter Jackets Display">
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Jadner Espartero. Made with passion.</p>
+  </footer>
+
+</body>
+</html>

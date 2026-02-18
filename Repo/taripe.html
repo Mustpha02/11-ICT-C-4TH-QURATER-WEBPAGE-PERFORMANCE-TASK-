@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reyana Taripe | About Me</title>
+  
+  <style>
+    :root {
+      --pink: #ff9ec1;
+      --dark-pink: #e06ea6;
+      --purple: #c79cff;
+      --dark-purple: #9b5de5;
+      --black: #0f0f0f;
+      --dark-gray: #1a1a1a;
+      --light-gray: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--black) 0%, #1a0033 100%);
+      color: var(--light-gray);
+      font-family: system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 0 3rem;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--dark-pink);
+      box-shadow: 
+        0 0 30px rgba(224, 110, 166, 0.5),
+        0 0 60px rgba(199, 156, 255, 0.3);
+      margin-bottom: 1.8rem;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.08);
+    }
+
+    h1 {
+      font-size: 4.2rem;
+      font-weight: 700;
+      color: var(--pink);
+      text-shadow: 0 0 30px rgba(255, 158, 193, 0.4);
+      margin-bottom: 0.6rem;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: var(--purple);
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: rgba(15, 15, 15, 0.75);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(201, 156, 255, 0.12);
+      border-radius: 16px;
+      padding: 2.8rem;
+      margin: 2rem 0;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      color: var(--dark-pink);
+      font-size: 2.1rem;
+      margin-bottom: 1.4rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2:after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background: var(--purple);
+      bottom: -8px;
+      left: 0;
+      border-radius: 3px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .highlight {
+      color: var(--pink);
+      font-weight: 500;
+    }
+
+    .social-links {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .social-links a {
+      color: var(--light-gray);
+      font-size: 1.4rem;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--purple);
+      transform: translateY(-3px);
+      text-shadow: 0 5px 15px rgba(199, 156, 255, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 3.2rem; }
+      .profile-pic { width: 140px; height: 140px; }
+      .card { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <img 
+        src="taripe.jpg" 
+        alt="Reyana Taripe" 
+        class="profile-pic"
+      >
+      <h1>Reyana Taripe</h1>
+      <div class="subtitle">just a girl who loves pink, black & purple ♡</div>
+    </header>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hi! I'm Reyana, but you can call me <span class="highlight">Rey</span> or <span class="highlight">Nana</span> — whichever feels right to you.</p>
+      <p>I’m the kind of person who always has pink on her nails, black in her wardrobe, and purple somewhere in my room. These three colors just feel like home to me.</p>
+      <p>I love things that are <span class="highlight">cute but a little moody</span> — think Sanrio characters wearing goth makeup, iced lattes at midnight, playlists that go from Laufey to Chase Atlantic, and oversized hoodies on rainy days.</p>
+    </div>
+
+    <div class="card">
+      <h2>Little Things About Me</h2>
+      <p>• My favorite color combo is <span class="highlight">pink + black + purple</span> — always has been, always will be</p>
+      <p>• I believe every outfit is better with at least one sparkly or shiny thing</p>
+      <p>• I screenshot conversations that make me laugh so I can reread them when I’m sad</p>
+      <p>• Night time is my most creative time (and also my most overthinking time)</p>
+      <p>• I collect pretty stickers, empty perfume bottles, and memories I probably romanticize too much</p>
+    </div>
+
+    <div class="social-links">
+      <!-- Replace # with your real links when you have them -->
+      <a href=https://www.instagram.com/reyana_lu?igsh=MXM2aWs2a2Rvb29leA==>instagram</a>
+      <a href=https://www.facebook.com/profile.php?id=61587679738610>Facebook</a>
+    </div>
+
+    <footer>
+      Made with ♡ & a lot of purple lights • 2026
+    </footer>
+
+  </div>
+
+</body>
+</html>

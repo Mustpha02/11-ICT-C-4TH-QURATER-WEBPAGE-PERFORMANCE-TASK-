@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qeenan Madjiri</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #6b7280, #374151);
+      color: white;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    h2 {
+      color: #4b5563;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #6366f1;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    p.intro {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #4b5563;
+    }
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #374151;
+    }
+    footer {
+      background: #374151;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.5rem; }
+      .profile-pic { width: 140px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="madjiri.jpg" alt="Qeenan Madjiri" class="profile-pic">
+    <!-- Replace the src above with your actual photo URL or local file path like "myphoto.jpg" -->
+    <h1>Qeenan Madjiri</h1>
+    <p>Enjoying life one moment at a time</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About Me</h2>
+      <p class="intro">
+        Hi! I'm Qeenan Madjiri. I enjoy playing online games because they help me relax and have fun during my free time. 
+        I also love going out with my friends and creating happy memories with them. Sometimes, I like buying things for myself 
+        as a simple way to reward my hard work. One of my favorite hobbies is taking pictures of the sunset because I find it 
+        calming and beautiful. I also love cats very much because they are cute and comforting. Overall, I am a person who 
+        enjoys life, values my interests, and continues to grow and improve myself.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Interests</h2>
+      <div class="interests">
+
+        <div class="card">
+          <img src="https://i.ytimg.com/vi/R-pa_2S-wio/sddefault.jpg" alt="Gaming setup">
+          <div class="card-content">
+            <h3>Online Gaming</h3>
+            <p>My favorite way to unwind and have fun</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://c8.alamy.com/comp/TX8GW7/happy-multhietnic-friends-students-hanging-out-together-outdoors-drinking-coffee-at-the-cafe-chatting-standing-TX8GW7.jpg" alt="Friends hanging out">
+          <div class="card-content">
+            <h3>Time with Friends</h3>
+            <p>Creating happy memories together</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.pexels.com/photos/16246036/pexels-photo-16246036/free-photo-of-sunset-over-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful sunset">
+          <div class="card-content">
+            <h3>Sunset Photography</h3>
+            <p>Capturing calm and beautiful moments</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://a-z-animals.com/media/2025/08/shutterstock-2220721623-huge-licensed-scaled-1024x683.jpg" alt="Cozy cat">
+          <div class="card-content">
+            <h3>Cats</h3>
+            <p>They are so cute and comforting</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://c8.alamy.com/comp/2GACXDX/colorful-bright-illuminated-rgb-gaming-pc-with-keyboard-mouse-monitor-and-chair-with-racing-on-screen-in-front-of-led-light-brick-stone-wall-computer-2GACXDX.jpg" alt="Gaming PC">
+          <div class="card-content">
+            <h3>Gaming & Rewards</h3>
+            <p>Treating myself after hard work</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+   <a href=https://www.facebook.com/qeenan.madjiri?mibextid=wwXIfr&rdid=hlrm2g4i9nDwgjVY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1G2wDGEvab%2F%3Fmibextid%3DwwXIfr>Facebook<a/>
+   <a href=
+  <footer>
+    <p>© 2026 Qeenan Madjiri • Made with ❤️</p>
+  </footer>
+
+</body>
+</html>

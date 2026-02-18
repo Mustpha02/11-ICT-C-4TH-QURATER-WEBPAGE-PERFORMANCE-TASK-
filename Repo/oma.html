@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reymark Oma | About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f8f9fa;
+      color: #2d3436;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      position: relative;
+    }
+
+    .profile-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid white;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+
+    .profile-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 2.5rem 0 0.6rem;
+    }
+
+    header p.tagline {
+      font-size: 1.4rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 2.8rem;
+      margin-bottom: 2.2rem;
+    }
+
+    h2 {
+      color: #4a69bd;
+      font-size: 2.2rem;
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 2.8rem;
+      color: #4b5563;
+    }
+
+    .hobbies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .hobby-item {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      border-left: 6px solid #667eea;
+    }
+
+    .hobby-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    }
+
+    .hobby-item h3 {
+      color: #2d3748;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #64748b;
+      font-size: 1rem;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 640px) {
+      header h1 { font-size: 2.6rem; }
+      header { padding: 5rem 1rem 3.5rem; }
+      .profile-container { width: 150px; height: 150px; }
+      .container { margin: 4rem auto 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-container">
+      <!-- Replace this src with YOUR photo direct link -->
+      <img src="oma.jpg" alt="Reymark Oma">
+    </div>
+    
+    <h1>Reymark Oma</h1>
+    <p class="tagline">Gamer • Traveler • Food Lover • Go-Getter</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Hi, I'm Reymark!</h2>
+      <p class="intro">
+        I love balancing fun, adventure, tasty experiences, and real progress in life.<br>
+        These are the things that keep me excited and growing every day:
+      </p>
+    </div>
+
+    <div class="hobbies">
+      <div class="hobby-item">
+        <h3>Gaming 🎮</h3>
+        <p>
+          My go-to way to chill and recharge.  
+          Gaming helps me relax deeply while sharpening my strategy, quick thinking, and problem-solving skills.
+        </p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Traveling ✈️</h3>
+        <p>
+          Exploring new cities, nature, and cultures is thrilling.  
+          The best part? Trying all the local foods and street eats that tell the story of each place.
+        </p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Eating 🍜🌮🍱</h3>
+        <p>
+          Food is happiness on a plate.  
+          From hole-in-the-wall spots to night markets, discovering new flavors is one of my biggest joys.
+        </p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Working 💼</h3>
+        <p>
+          I actually enjoy putting in the work.  
+          Setting goals, staying focused, and seeing results gives me energy and a real sense of purpose.
+        </p>
+      </div>
+    </div>
+
+  </div>
+        <a href=https://www.facebook.com/share/1HnZwz5sJ3/>Facebook</a>
+        <a href=https://www.instagram.com/omakoy4wa?igsh=MXQ4NWc2ZHVsdTc1>Instagram</a>
+  <footer>
+    <p>© 2026 Reymark Oma • Built with passion and some HTML/CSS</p>
+  </footer>
+
+</body>
+</html>

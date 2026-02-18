@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubrey Potan - About Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #0f3460;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #e94560;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e94560;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 10px 0;
+            color: #e94560;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+        }
+        h2 {
+            color: #e94560;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .hobby-card {
+            background: rgba(233, 69, 96, 0.15);
+            border: 2px solid #e94560;
+            border-radius: 12px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(233, 69, 96, 0.4);
+        }
+        .interest-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f3460;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+        a {
+            color: #e94560;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="potan.jpg" alt="Aubrey Potan" class="profile-img">
+        <!-- Replace the src above with your actual image URL if hosting online, 
+             or use a local file path like "myphoto.jpg" if keeping everything in one folder -->
+        <h1>Aubrey Potan</h1>
+        <p>Artist • Gamer • Music Lover</p>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Aubrey Potan, and these are the things that make me, me.</p>
+            <p>I really love drawing, both traditional and digital. I enjoy sketching on paper just as much as working on digital art because each style feels different and inspiring in its own way. I also draw inside games like Roblox, where I even take commissions and get paid for my artwork. It makes me really happy that people appreciate my art enough to support it, and it motivates me to improve more and develop my own unique style.</p>
+            <p>I also enjoy playing games in my free time. I play Minecraft occasionally with my friends, especially when we just want to relax and build random things together. I also love Stardew Valley because it’s such a calming game, and I enjoy farming, decorating, and interacting with the characters.</p>
+            <p>Music is a big part of my life. I’ve loved emo music ever since I was a child because my mom and uncles used to listen to it a lot. Bands like Green Day bring a lot of nostalgia for me. My favorite genre, though, is Vkei (Visual Kei / Japanese rock). I really like the fashion, the aesthetic, and the emotional intensity of the music. My favorite band is the GazettE, and I admire their style and sound a lot.</p>
+            <p>Overall, art, games, and music are the main things that inspire me and help me express myself.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <img src="https://cdn.mos.cms.futurecdn.net/5tVfgJVYNP9CXhYiyLHNTh.jpg" alt="Digital Drawing" class="interest-img">
+                    <h3>Drawing</h3>
+                    <p>Traditional & digital art, Roblox commissions</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="https://thumbs.dreamstime.com/b/anime-girl-dog-ears-smiling-reaching-forward-paws-adorable-style-pink-hair-smiles-warmly-out-paw-like-hands-great-367079026.jpg" alt="Gaming" class="interest-img">
+                    <h3>Gaming</h3>
+                    <p>Minecraft with friends & cozy Stardew Valley farming</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="https://i.pinimg.com/736x/4c/56/51/4c5651eb9ba72a7117caa3d2ca1e3a51.jpg" alt="the GazettE" class="interest-img">
+                    <h3>Music</h3>
+                    <p>Emo nostalgia (Green Day) & Visual Kei love (the GazettE)</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Aubrey Potan • Made with lots of love, art, and the GazettE on repeat ♡</p>
+    </footer>
+
+</body>
+</html>

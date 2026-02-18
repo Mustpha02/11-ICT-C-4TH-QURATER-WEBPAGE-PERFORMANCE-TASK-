@@ -1,0 +1,231 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azea Antes</title>
+  <style>
+    :root {
+      --black: #0f0f0f;
+      --white: #f5f5f5;
+      --gray: #333;
+      --light-gray: #aaa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+      color: var(--white);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 3rem 1rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgba(255,255,255,0.2);
+      margin-bottom: 1.2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      margin-bottom: 0.4rem;
+      letter-spacing: -1px;
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      color: var(--light-gray);
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      margin-bottom: 1.4rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.6rem;
+      display: inline-block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 1.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.15);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      color: #ddd;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      margin: 0.4rem 0.5rem 0.4rem 0;
+      font-size: 0.95rem;
+    }
+
+    .tag.like {
+      background: rgba(100, 200, 100, 0.15);
+      color: #a8e0a8;
+    }
+
+    .tag.dislike {
+      background: rgba(220, 80, 80, 0.15);
+      color: #ffaaaa;
+    }
+
+    .highlight {
+      color: #b0e0ff;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #777;
+      font-size: 0.95rem;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.8rem; }
+      h2 { font-size: 1.9rem; }
+      .profile-pic { width: 140px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="antes.jpg" alt="Azea Antes - Scout" class="profile-pic">
+    <h1>Azea Antes</h1>
+    <div class="tagline">Scout | Music lover | Spaghetti king 🎶🍝🏕️</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Hi! I'm Azea Antes.</p>
+        <p>I love <span class="highlight">music</span>, <span class="highlight">eating</span>, <span class="highlight">dancing</span>, <span class="highlight">singing</span>, <span class="highlight">scouting</span>, and most especially <span class="highlight">making people happy</span> 😊</p>
+        <p>My world mostly moves in <span class="highlight">black and white</span> — that's my favorite vibe.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Favorites</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Favorite Color</h3>
+          <div><span class="tag like">Black</span><span class="tag like">White</span></div>
+        </div>
+
+        <div class="card">
+          <h3>Favorite Food</h3>
+          <div><span class="tag like">Spaghetti 🍝</span></div>
+        </div>
+
+        <div class="card">
+          <h3>Favorite Drinks</h3>
+          <div>
+            <span class="tag like">Dutch Mill</span>
+            <span class="tag like">Chuckie</span>
+            <span class="tag like">Mogu Mogu</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Favorite Singer</h3>
+          <div><span class="tag like">Daniel Caesar</span></div>
+        </div>
+
+        <div class="card">
+          <h3>Favorite Song</h3>
+          <div><span class="tag like">Just the Two of Us</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Loves & Dislikes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>I really like</h3>
+          <div>
+            <span class="tag like">Building Legos</span>
+            <span class="tag like">Cars</span>
+            <span class="tag like">Cats 😺</span>
+            <span class="tag like">Minions</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>I really don't like</h3>
+          <div>
+            <span class="tag dislike">Smell of cigarettes 🚬</span>
+            <span class="tag dislike">Fake people</span>
+            <span class="tag dislike">Vegetables 🥦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <a href=https://www.facebook.com/share/1bu16dW9cK/>Facebook</a>
+     <a href=https://www.instagram.com/lil_rarazx?igsh=anhhY2FsdzQycDVn>Instagram</a>
+</main>
+
+  <footer>
+    <p>Made with black & white + scout spirit • © Azea Antes 2026</p>
+  </footer>
+
+</body>
+</html>
